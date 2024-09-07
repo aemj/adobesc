@@ -13,7 +13,7 @@
   width: fit-content;
   padding: 10px;
   color: var(--bb-default-dark);
-  background-color: var(--light-color);
+  background-color: var(--background-color);
 }
 
 .hero picture {
