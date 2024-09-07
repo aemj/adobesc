@@ -10,10 +10,9 @@
 }
 
 .hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
+  width: fit-content;
+  color: var(--bb-default-dark);
+  background-color: var(--bb-default-light);
 }
 
 .hero picture {
@@ -32,6 +31,12 @@
 
 @media (width >= 900px) {
   .hero {
-    padding: 40px 32px;
+    padding: 250px 86px;
+  }
+}
+
+@media (width < 900px) {
+  .hero {
+      padding: 180px 86px;
   }
 }
