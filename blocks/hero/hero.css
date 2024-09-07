@@ -11,8 +11,9 @@
 
 .hero h1 {
   width: fit-content;
+  padding: 10px;
   color: var(--bb-default-dark);
-  background-color: var(--bb-default-light);
+  background-color: var(--light-color);
 }
 
 .hero picture {
