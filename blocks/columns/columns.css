@@ -1,10 +1,17 @@
+.columns {
+  background-color: var(--bb-default-dark);
+  border-radius: 0.7rem;
+}
+
 .columns > div {
   display: flex;
   flex-direction: column;
+  padding: 40px;
 }
 
 .columns img {
   width: 100%;
+  border-radius: .75rem;
 }
 
 .columns > div > div {
@@ -25,9 +32,22 @@
     flex-direction: unset;
     gap: 24px;
   }
-
-  .columns > div > div {
-    flex: 1;
-    order: unset;
+}
+@media (width >= 900px) {
+  .columns > div > div > h2 {
+    color: white;
   }
 }
+
+@media (width >= 900px) {
+  .columns > div > div > p {
+    color: white;
+    font-size: medium;
+  }
+}
+
+.columns > div > div {
+  flex: 1;
+  order: unset;
+}
+

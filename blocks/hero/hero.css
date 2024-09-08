@@ -12,10 +12,12 @@
 .hero h1 {
   width: fit-content;
   padding: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
   color: var(--bb-default-dark);
-  background-color: var(--background-color);
+  background-color: var(--light-color);
   box-sizing: border-box;
-  border-radius: .75rem;
+  border-radius: 2.5rem;
   z-index: 20;
   position: relative;
 }
