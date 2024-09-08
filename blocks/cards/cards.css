@@ -9,11 +9,13 @@
 
 .cards > ul > li {
   border: 1px solid #dadada;
-  background-color: var(--background-color);
+  background-color: var(--bb-card-grey);
+  border-radius: .75rem;
 }
 
 .cards .cards-card-body {
   margin: 16px;
+  color: var(--bb-default-dark);
 }
 
 .cards .cards-card-image {
@@ -24,4 +26,5 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  border-radius: .5rem .5rem 0 0;
 }

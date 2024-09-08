@@ -20,6 +20,10 @@
   --link-hover-color: #1d3ecf;
   --bb-default-dark: #522058;
   --bb-default-light: #eadfec;
+  --bb-button: #fed15f;
+  --bb-button-hover: #e4a632;
+  --bb-card-grey: #EDEDED;
+  --bb-link-hover: black;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
@@ -114,8 +118,15 @@ h6 {
   scroll-margin: 40px;
 }
 
-h1 { font-size: var(--heading-font-size-xxl); }
-h2 { font-size: var(--heading-font-size-xl); }
+h1 { 
+  font-size: var(--heading-font-size-xxl); 
+  color: var(--bb-default-dark);
+}
+
+h2 { 
+  font-size: var(--heading-font-size-xl); 
+  color: var(--bb-default-dark);
+}
 h3 { font-size: var(--heading-font-size-l); }
 h4 { font-size: var(--heading-font-size-m); }
 h5 { font-size: var(--heading-font-size-s); }
@@ -157,13 +168,13 @@ button {
 
 /* links */
 a:any-link {
-  color: var(--link-color);
+  color: var(--bb-default-dark);
   text-decoration: none;
   word-break: break-word;
 }
 
 a:hover {
-  color: var(--link-hover-color);
+  color: var(--bb-link-hover);
   text-decoration: underline;
 }
 
@@ -175,7 +186,7 @@ button {
   max-width: 100%;
   margin: 12px 0;
   border: 2px solid transparent;
-  border-radius: 2.4em;
+  border-radius: .8rem;
   padding: 0.5em 1.2em;
   font-family: var(--body-font-family);
   font-style: normal;
@@ -183,8 +194,8 @@ button {
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  background-color: var(--link-color);
-  color: var(--background-color);
+  background-color: var(--bb-button);
+  color: black;
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -195,7 +206,7 @@ a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--link-hover-color);
+  background-color: var(--bb-button-hover);
   cursor: pointer;
 }
 
@@ -231,7 +242,7 @@ main img {
 
 /* sections */
 main > .section {
-  margin: 40px 0;
+  margin: 10px 0;
 }
 
 main > .section > div {
@@ -246,14 +257,13 @@ main > .section:first-of-type {
 
 @media (width >= 900px) {
   main > .section > div {
-    padding: 0 32px;
+    padding: 20px 32px;
   }
 }
 
 /* section metadata */
 main .section.light,
 main .section.highlight {
-  background-color: var(--light-color);
+  background-color: var(--background-color);
   margin: 0;
-  padding: 40px 0;
 }
