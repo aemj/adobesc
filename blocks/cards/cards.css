@@ -15,9 +15,6 @@
 
 .cards .cards-card-body {
   margin: 16px;
-}
-
-.cards .cards-card-body {
   color: var(--bb-default-dark);
 }
 
