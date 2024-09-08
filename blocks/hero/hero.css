@@ -14,6 +14,10 @@
   padding: 10px;
   color: var(--bb-default-dark);
   background-color: var(--background-color);
+  box-sizing: border-box;
+  border-radius: .75rem;
+  z-index: 20;
+  position: relative;
 }
 
 .hero picture {
@@ -22,6 +26,8 @@
   inset: 0;
   object-fit: cover;
   box-sizing: border-box;
+  max-width: 57%;
+  left: auto;
 }
 
 .hero img {
@@ -32,12 +38,8 @@
 
 @media (width >= 900px) {
   .hero {
-    padding: 250px 86px;
-  }
-}
-
-@media (width < 900px) {
-  .hero {
-      padding: 180px 86px;
+    padding: 150px 86px;
+    background-image: url('/images/fade-right-large.webp');
+    position: sticky;
   }
 }
