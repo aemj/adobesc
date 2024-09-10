@@ -19,6 +19,15 @@
   order: unset;
 }
 
+.columns > div > div > h2 {
+  color: white;
+}
+
+.columns > div > div > p {
+  color: white;
+  font-size: large;
+}
+
 .columns > div > .columns-img-col {
   order: 0;
 }

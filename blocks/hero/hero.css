@@ -4,20 +4,21 @@
 }
 
 .hero {
-  position: relative;
+  position: sticky;
   padding: 40px 24px;
+  background-image: url('/images/fade-right-large.webp');
   min-height: 300px;
 }
 
 .hero h1 {
-  width: fit-content;
+  width: 263px;
   padding: 10px;
   padding-left: 28px;
   padding-right: 28px;
   color: var(--bb-default-dark);
   background-color: var(--light-color);
   box-sizing: border-box;
-  border-radius: 2.5rem;
+  border-radius: 1rem;
   z-index: 20;
   position: relative;
 }
@@ -43,5 +44,20 @@
     padding: 150px 86px;
     background-image: url('/images/fade-right-large.webp');
     position: sticky;
+  }
+}
+
+@media (width >= 900px) {
+  .hero h1 {
+    width: fit-content;
+    padding: 10px;
+    padding-left: 28px;
+    padding-right: 28px;
+    color: var(--bb-default-dark);
+    background-color: var(--light-color);
+    box-sizing: border-box;
+    border-radius: 1rem;
+    z-index: 20;
+    position: relative;
   }
 }
