@@ -10,17 +10,25 @@ footer .footer > div {
 }
 
 footer .footer > div > div > .default-content-wrapper{
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 footer .footer p {
   margin: 0;
+  padding: 12px;
 }
 
 @media (width >= 900px) {
   footer .footer > div {
     padding: 40px 32px 24px;
+  }
+}
+
+@media (width >= 900px) {
+  footer .footer > div > div > .default-content-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
