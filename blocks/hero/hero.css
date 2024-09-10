@@ -59,5 +59,6 @@
     border-radius: 1rem;
     z-index: 20;
     position: relative;
+    max-width: 641px;
   }
 }
